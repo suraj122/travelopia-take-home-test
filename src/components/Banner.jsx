@@ -7,16 +7,18 @@ function Banner() {
             className="w-full h-full object-cover"
             src="/images/travel.jpeg"
             alt="Boating in sea under the moutains"
+            width="1600"
+            height="625"
           />
           <figcaption className="text-center absolute bg-black bg-opacity-40 top-0 left-0 right-0 bottom-0 flex justify-center items-center">
-            <div>
+            <div className="container mx-auto px-6">
               <header>
-                <h1 className="text-white">
-                  <strong className="text-xl font-normal inline-block">
+                <h1 className="text-white ">
+                  <strong className="text-lg md:text-xl font-normal inline-block">
                     THE WORLD&apos;S LEADING COLLECTION OF
                   </strong>
                   <br />
-                  <strong className="text-5xl inline-block mt-3">
+                  <strong className="text-3xl md:text-5xl inline-block font-medium mt-3">
                     EXPERIENTIAL TRAVEL BRANDS
                   </strong>
                 </h1>
@@ -25,7 +27,7 @@ function Banner() {
               <footer>
                 <button
                   onClick={() => alert("Hello World!")}
-                  className="bg-black px-4 py-3 text-xl text-white rounded inline-block mt-4"
+                  className="bg-[#EB5B32] px-4 py-3 text-xl text-white rounded inline-block mt-8"
                 >
                   Click here
                 </button>

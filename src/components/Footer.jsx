@@ -5,8 +5,8 @@ function Footer() {
     <footer className="common bg-[#0b242b]">
       <div className="wrapper">
         <small className="text-lg text-white">&copy; Travelopia</small>
-        <nav className="footer_nav">
-          <ul>
+        <nav className="navigations footer_nav">
+          <ul className="flex items-center">
             <li>
               <a href="#">
                 <FaTwitter />
