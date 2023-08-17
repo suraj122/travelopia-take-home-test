@@ -1,9 +1,13 @@
+import Banner from "./components/Banner";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+
 function App() {
   return (
     <>
-      <h1 className="text-center">
-        <span>Hello Travelopia!</span>
-      </h1>
+      <Header />
+      <Banner />
+      <Footer />
     </>
   );
 }
