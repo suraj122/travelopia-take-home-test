@@ -1,8 +1,42 @@
-# React + Vite
+# Project Title
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Travelopia Take Home Test**
 
-Currently, two official plugins are available:
+- https://travelopia-test.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Description
+
+The Travelopia Take-Home Test is an assignment provided as part of the interview process at Travelopia, a leading company in the travel and tourism industry.
+
+### Installation
+
+1. Clone the repository to your local machine using the following command:
+
+```
+  git clone https://github.com/suraj122/travelopia-take-home-test.git
+
+```
+
+2. Navigate to the project directory:
+
+```
+  cd travelopia-take-home-test
+```
+
+3. Install the project dependencies using npm:
+
+```
+  npm install
+```
+
+### Running the App
+
+To start the App, run the following command:
+
+```
+  npm start
+```
+
+The App will be up and running on the specified port.
+
+Thank you for Watching! If you have any questions or feedback, please don't hesitate to reach out.
