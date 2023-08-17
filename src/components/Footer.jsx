@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { FaLinkedin, FaFacebookSquare, FaTwitter } from "react-icons/fa";
 
 function Footer() {
@@ -8,19 +10,19 @@ function Footer() {
         <nav className="navigations footer_nav">
           <ul className="flex items-center">
             <li>
-              <a href="#">
+              <Link to="/">
                 <FaTwitter />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/">
                 <FaLinkedin />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/">
                 <FaFacebookSquare />
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
