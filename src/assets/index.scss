@@ -8,6 +8,7 @@
     @apply container mx-auto px-6 flex justify-between items-center;
   }
 }
+
 // Banner
 .banner {
   height: calc(100vh - 200px);
@@ -22,12 +23,14 @@
     @apply text-2xl text-white;
   }
 }
+
 // Top Navigations
 .header_nav {
   .menu {
     @apply md:flex items-center;
     @media screen and (max-width: 768px) {
-      @apply absolute z-10 bg-white w-full h-full left-0 top-0 py-28 p-6;
+      @apply absolute z-10 bg-white w-full h-full right-0 top-0 py-28 p-6;
+      animation: openMenu 500ms ease forwards;
       li {
         @apply ml-0 my-2;
       }
@@ -38,11 +41,31 @@
   }
 }
 .user-menu {
-  @apply top-0 md:absolute  right-0 z-10  md:hidden pt-12;
+  @apply md:absolute top-0 right-0 z-10 md:w-0 md:hidden pt-12;
   .user-menu__wrapper {
-    @apply md:bg-gray-100 md:w-44 pl-0  md:rounded md:shadow-md md:p-2 text-theme-900;
+    @apply md:bg-gray-100 pl-0  md:rounded md:shadow-md md:p-2 text-theme-900;
   }
 }
 .user:hover .user-menu {
-  @apply inline-block;
+  @apply inline-block md:w-44 opacity-100;
+}
+
+// animations
+@keyframes openMenu {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
 }

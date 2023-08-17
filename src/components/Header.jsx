@@ -9,7 +9,10 @@ function Header() {
   return (
     <header className="common">
       <div className="wrapper">
-        <Link to="/" className="text-xl font-bold text-accent-900">
+        <Link
+          to="/"
+          className="relative z-20 text-xl font-bold text-accent-900"
+        >
           Travelopia
         </Link>
         <nav
