@@ -7,15 +7,17 @@ import { useState } from "react";
 function Header() {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   return (
-    <header className="common">
+    <header role="banner" className="common">
       <div className="wrapper">
         <Link
+          role="branding"
           to="/"
           className="relative z-20 text-xl font-bold text-accent-900"
         >
           Travelopia
         </Link>
         <nav
+          role="navigation"
           className={`navigations header_nav ${
             isMenuVisible ? "" : "hidden md:block"
           }`}
@@ -47,7 +49,7 @@ function Header() {
                 />
               </button>
               {/* User Menu */}
-              <div className="user-menu">
+              <div role="user-info" className="user-menu">
                 <ul className="user-menu__wrapper">
                   <li className="py-2 flex items-center">
                     <strong>Sophia Tondon</strong>
@@ -56,7 +58,7 @@ function Header() {
                     <span>Dharamshala, HP</span>
                   </li>
                   <li className="py-2">
-                    <time>28th Aug 2023</time>
+                    <time dateTime="2023-08-28">28th Aug 2023</time>
                   </li>
                 </ul>
               </div>
@@ -66,12 +68,14 @@ function Header() {
         {/* Menu Icon to display and hide Navigation menu for mobiles */}
         <div className="md:hidden">
           <button
+            rel="button"
             className={`${isMenuVisible ? "hidden" : "inline-block"}`}
             onClick={() => setIsMenuVisible(!isMenuVisible)}
           >
             <CgMenuRight className="text-3xl text-theme-900 font-bold" />
           </button>
           <button
+            role="button"
             className={`${
               isMenuVisible ? "inline-block" : "hidden"
             } relative z-10`}

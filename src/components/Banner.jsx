@@ -1,7 +1,7 @@
 function Banner() {
   return (
-    <main>
-      <article className="banner">
+    <main role="main">
+      <section role="banner" className="banner">
         <figure className="h-full relative">
           <img
             className="w-full h-full object-cover"
@@ -26,6 +26,7 @@ function Banner() {
 
               <footer>
                 <button
+                  role="button"
                   onClick={() => alert("Hello World!")}
                   className="bg-[#EB5B32] px-4 py-3 text-xl text-white rounded inline-block mt-8"
                 >
@@ -35,7 +36,7 @@ function Banner() {
             </div>
           </figcaption>
         </figure>
-      </article>
+      </section>
     </main>
   );
 }

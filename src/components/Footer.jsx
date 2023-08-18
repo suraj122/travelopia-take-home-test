@@ -4,10 +4,12 @@ import { FaLinkedin, FaFacebookSquare, FaTwitter } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="common bg-[#0b242b]">
+    <footer role="contentinfo" className="common bg-[#0b242b]">
       <div className="wrapper">
-        <small className="text-lg text-white">&copy; Travelopia</small>
-        <nav className="navigations footer_nav">
+        <small role="copyright" className="text-lg text-white">
+          &copy; Travelopia
+        </small>
+        <nav role="navigation" className="navigations footer_nav">
           <ul className="flex items-center">
             <li>
               <Link to="/">
