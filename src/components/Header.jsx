@@ -24,17 +24,17 @@ function Header() {
         >
           <ul className="menu">
             <li>
-              <Link className="text-accent-900" to="/">
+              <Link to="/">
                 Home
               </Link>
             </li>
             <li>
-              <Link className="text-white" to="/">
+              <Link to="/">
                 About Us
               </Link>
             </li>
             <li>
-              <Link className="text-white" to="/">
+              <Link to="/">
                 Our Brands
               </Link>
             </li>

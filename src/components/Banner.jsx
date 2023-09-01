@@ -13,7 +13,7 @@ function Banner() {
           <figcaption className="text-center absolute bg-black bg-opacity-40 top-0 left-0 right-0 bottom-0 flex justify-center items-center">
             <div className="container mx-auto px-6">
               <header>
-                <h1 className="text-white ">
+                <h1 className="text-white">
                   <strong className="text-lg md:text-xl font-normal inline-block">
                     THE WORLD&apos;S LEADING COLLECTION OF
                   </strong>
@@ -28,7 +28,7 @@ function Banner() {
                 <button
                   role="button"
                   onClick={() => alert("Hello World!")}
-                  className="bg-[#EB5B32] px-4 py-3 text-xl text-white rounded inline-block mt-8"
+                  className="bg-accent-900 px-4 py-3 text-xl text-white rounded inline-block mt-8"
                 >
                   Click here
                 </button>

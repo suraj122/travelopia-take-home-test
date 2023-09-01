@@ -4,7 +4,7 @@ import { FaLinkedin, FaFacebookSquare, FaTwitter } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer role="contentinfo" className="common bg-[#0b242b]">
+    <footer role="contentinfo" className="common bg-theme-900">
       <div className="wrapper">
         <small role="copyright" className="text-lg text-white">
           &copy; Travelopia
